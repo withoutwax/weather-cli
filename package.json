@@ -1,0 +1,16 @@
+{
+  "name": "weather-cli",
+  "version": "1.0.0",
+  "author": "Will Kim <rlagmlckd@gmail.com> (https://withoutwax.me)",
+  "description": "A simple cli app that tells you the current weather.",
+  "scripts": {},
+  "bin": {
+    "weather": "bin/weather"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "minimist": "^1.2.0",
+    "ora": "^3.1.0"
+  }
+}
