@@ -5,7 +5,7 @@ module.exports = async (args) => {
     const spinner = ora().start();
 
     try {
-        console.log(args);
+        // console.log(args);
         const location = args.location;
         const weather = await getWeather(location, 'today');
 
