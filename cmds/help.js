@@ -1,6 +1,6 @@
 const menus = {
     main: `
-        outside [command] <options>
+        weather [command] <options>
         
         today ................ show weather for today
         forecast ............. show 10-day weather forecast
@@ -9,13 +9,13 @@ const menus = {
     `,
 
     today: `
-        outside today <options>
+        weather today <options>
 
         --location, -l ..... the location to use
     `,
     
     forecast: `
-        outside forecast <options>
+        weather forecast <options>
 
         --location, -l ..... the location to use
     `,
