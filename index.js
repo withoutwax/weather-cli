@@ -8,6 +8,9 @@ module.exports = () => {
     
     let cmd = args._[0] || 'help';
 
+    // console.log(args, cmd);
+    // console.log(args.l);
+
     if (args.version || args.v) {
         cmd = 'version';
     }

@@ -3,12 +3,18 @@ A CLI app that gives you the weather forecast.
 
 ## Install
 Install Node.js, then:
-```Bash
+```
 $ npx withoutwax-weather-cli
 ```
 
 ## Usage
-```Bash
+Run the application with ```weather``` command:
+```
+$ weather
+```
+You can use total 4 commands with the weather app:
+
+```
 $ weather --help
 
     Options
@@ -19,14 +25,13 @@ $ weather --help
         version .............. Show package version
         help ................. Show help menu for a command
     
-    weather today <options>
 
-        --location, -l ..... <City name>
+```
+When writing the command, you must use ```-l``` flag or ```--location``` flag to specify the location:
+```
+$ weather today -l Chicago
 
-    weather forecast <options>
-
-        --location, -l ..... <City name>
-
+$ weather forecast --location Seoul
 ```
 
 ## License

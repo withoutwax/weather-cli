@@ -1,6 +1,6 @@
 {
   "name": "withoutwax-weather-cli",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "author": "Will Kim <rlagmlckd@gmail.com> (https://withoutwax.me)",
   "description": "A simple CLI app that tells you the current weather.",
   "scripts": {},

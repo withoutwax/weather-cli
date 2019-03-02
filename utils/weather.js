@@ -22,7 +22,8 @@ module.exports = async (location, cmd_type) => {
             return response.data;
         })
         .catch((error) => {
-            console.log(error);
+            console.log(`There is an error! Please double check if there's a typo in location: "${location}" or whether the "${location}" actually exist!`);
+            // console.log(error);
         })
 
     return weather;

@@ -6,7 +6,7 @@ module.exports = async (args) => {
 
     try {
         // console.log(args);
-        const location = args.location;
+        const location = args.location || args.l;
         const weather = await getWeather(location, 'today');
 
         spinner.stop();
