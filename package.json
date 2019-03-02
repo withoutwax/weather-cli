@@ -1,12 +1,25 @@
 {
-  "name": "weather-cli",
+  "name": "withoutwax-weather-cli",
   "version": "1.0.0",
   "author": "Will Kim <rlagmlckd@gmail.com> (https://withoutwax.me)",
-  "description": "A simple cli app that tells you the current weather.",
+  "description": "A simple CLI app that tells you the current weather.",
   "scripts": {},
+  "engines": {
+    "node": ">=8"
+  },
+  "preferGlobal": true,
   "bin": {
     "weather": "bin/weather"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/withoutwax/weather-cli.git"
+  },
+  "keywords": [
+    "weather",
+    "forecast",
+    "rain"
+  ],
   "license": "MIT",
   "dependencies": {
     "axios": "^0.18.0",

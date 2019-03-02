@@ -11,9 +11,15 @@ module.exports = async (args) => {
         spinner.stop();
 
         console.log(`Forecast for ${location}:`);
-        console.log(weather.list.forEach(element => {
-            console.log(element.main.temp);
-        }));
+
+        for (let i = 0; i < weather.list.length; i+=8) {
+            console.log(`${weather.list[i].dt_txt} - Low: ${weather.list[i].main.temp_min}° | High: ${weather.list[i].main.temp_max}° | ${weather.list[i].weather[0].main}`);
+        }
+
+        // console.log(weather.list.forEach(element => {
+        //     console.log(element.main.temp);
+        //     console.log(element.dt_txt);
+        // }));
 
     } catch (err) {
         spinner.stop();
@@ -21,19 +27,3 @@ module.exports = async (args) => {
         console.error(err);
     }
 }
-
-// const axios = require('axios');
-
-// let APIKEY = '6877bd8e50cea961dd23699a7be8b140';
-
-// module.exports = async (location) => {
-//     let weather = axios.get(`https://api.openweathermap.org/data/2.5/forecast?q=${location},us&appid=${APIKEY}`)
-//         .then((response) => {
-//             return response.data
-//         })
-//         .catch((error) => {
-//             console.log(error);
-//         })
-
-//     return weather;
-// }
